@@ -1,0 +1,169 @@
+#body {
+    background-color: #E5E1D7;
+    padding: 200px;
+    text-align: center;
+}  
+
+#wrapper{
+    display: grid;
+    grid-template-areas: "nav nav"
+                         "bigpic bigpic"
+                         "content content"
+                         "content2 content2"
+                         "footer footer";
+    background-color: #E5E1D7; 
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu";
+    background-color: #63D21F;
+    border-color: #63D21F;
+    height: 110px;
+    width: 1520px;
+}
+
+#logo {
+    grid-area: logo;
+    display: grid;
+    padding-left: 100px;
+    padding-top: 16px;
+    padding-right: 100px;
+}
+
+#menu{
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "home aboutme";
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 80px;
+    padding-top: 16px;
+}
+
+#home{
+    grid-area: home;
+    display: subgrid;
+    background-color: #20BA26;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-right-width: 1.6px;
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: #5BF342;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-left-width: 1.6px;
+}
+
+.bigpic {
+    grid-area: bigpic;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    bottom: 160px;
+    left: 300px;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr fr 1fr 1fr;
+    grid-template-areas:"title title title title"
+                        "song food colour subject";
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:50px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 600px;
+}
+
+#title {
+    grid-area: title;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+#song{
+    grid-area: song;
+    padding-left: 40px;
+}
+
+#food{
+    grid-area: food;
+}
+
+#colour{
+    grid-area: colour;
+}
+
+#subject {
+    grid-area: subject;
+    padding-right: 40px;
+}
+
+#content2 {
+    grid-area: content2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "spotify spotify writing writing"
+}
+
+#spotify {
+    grid-area: spotify;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:30px;
+    margin-left:60px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    height: 200px;
+    width: 600px;
+}
+
+#writing {
+    grid-area: writing;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:30px;
+    margin-right:60px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 180px;
+    width: 610px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #E5E1D7;
+    text-align: left;
+    height: 50px;  
+    padding-left: 60px;
+    padding-bottom: 10px;
+}

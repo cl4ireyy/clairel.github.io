@@ -1,0 +1,183 @@
+#body {
+    background-color: #E5E1D7;
+    padding: 200px;
+    text-align: center;
+}  
+
+#wrapper{
+    display: grid;
+    grid-template-areas: "nav"
+                         "bigpic"
+                         "content"
+                         "footer";
+    background-color: #E5E1D7; 
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu";
+    background-color: #63D21F;
+    border-color: #63D21F;
+    height: 110px;
+    width: 1520px;
+}
+
+#logo {
+    grid-area: logo;
+    display: grid;
+    padding-left: 100px;
+    padding-top: 16px;
+    padding-right: 100px;
+}
+
+#menu{
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "home aboutme";
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 80px;
+    padding-top: 16px;
+}
+
+#home{
+    grid-area: home;
+    display: subgrid;
+    background-color: #20BA26;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-right-width: 1.6px;
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: #5BF342;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-left-width: 1.6px;
+}
+
+.bigpic {
+    grid-area: bigpic;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    bottom: 160px;
+    left: 250px;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr fr 1fr;
+    grid-template-areas:"piano cooking writing"
+                        "salute rosesviolets writing"
+                        "digitech stage map"
+                        "writing1 writing1 map"
+                        "writing2 writing2 writing2";
+    background-color: #E5E1D7;
+    height: 1960px;
+}
+
+#piano {
+    grid-area: piano;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#cooking {
+    grid-area: cooking;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#salute {
+    grid-area: salute;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#rosesviolets {
+    grid-area: rosesviolets;
+    padding-bottom: 20px;
+}
+
+#digitech {
+    grid-area: digitech;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#stage {
+    grid-area: stage;
+    padding-bottom: 20px;
+}
+
+#map {
+    grid-area: map;
+}
+
+#writing {
+    grid-area: writing;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top: 50px;
+    padding-top: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 650px;
+    width: 480px;
+}
+
+#writing1 {
+    grid-area: writing1;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-left:20px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 60px;
+    height: 340px;
+    width: 670px;
+}
+
+#writing2 {
+    grid-area: writing2;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 350px;
+    width: 1350px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #E5E1D7;
+    text-align: left;
+    height: 50px;  
+    padding-left: 60px;
+    padding-bottom: 10px;
+}

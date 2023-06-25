@@ -1,0 +1,107 @@
+#body {
+    background-color: #E5E1D7;
+    padding: 200px;
+    text-align: center;
+}  
+
+#wrapper{
+    display: grid;
+    grid-template-areas: "nav"
+                         "bigpic"
+                         "profile"
+                         "footer";
+    background-color: #E5E1D7; 
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu";
+    background-color: #63D21F;
+    border-color: #63D21F;
+    height: 110px;
+    width: 1502px;
+}
+
+#logo {
+    grid-area: logo;
+    display: grid;
+    padding-left: 100px;
+    padding-top: 16px;
+    padding-right: 100px;
+}
+
+#menu{
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "home aboutme";
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 80px;
+    padding-top: 16px;
+}
+
+#home{
+    grid-area: home;
+    display: subgrid;
+    background-color: #20BA26;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-right-width: 1.6px;
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: #5BF342;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-left-width: 1.6px;
+}
+
+#profile {
+    display: grid;
+    grid-area: profile;
+    grid-template-columns: 1fr fr;
+    grid-template-areas: 
+    "pic profile1 profile1";
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:50px;
+    margin-left:60px;
+    margin-right:60px;
+}
+
+#pic {
+    grid-area: pic;
+    background-color: white;
+    padding-left: 200px;
+    border-width:1px;
+}
+
+#profile1 {
+    grid-area: profile1;
+    background-color: white;
+    padding-top: 40px;
+    padding-left: 100px;
+    width: 600px;
+    height: 200px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #E5E1D7;
+    text-align: left;
+    height: 50px;  
+    padding-left: 60px;
+    padding-bottom: 10px;
+}

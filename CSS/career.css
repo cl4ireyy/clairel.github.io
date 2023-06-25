@@ -1,0 +1,126 @@
+#body {
+    background-color: #E5E1D7;
+    padding: 200px;
+    text-align: center;
+}  
+
+#wrapper{
+    display: grid;
+    grid-template-areas: "nav"
+                         "bigpic"
+                         "content"
+                         "footer";
+    background-color: #E5E1D7; 
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu";
+    background-color: #63D21F;
+    border-color: #63D21F;
+    height: 110px;
+    width: 1520px;
+}
+
+#logo {
+    grid-area: logo;
+    display: grid;
+    padding-left: 100px;
+    padding-top: 16px;
+    padding-right: 100px;
+}
+
+#menu{
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "home aboutme";
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 80px;
+    padding-top: 16px;
+}
+
+#home{
+    grid-area: home;
+    display: subgrid;
+    background-color: #20BA26;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-right-width: 1.6px;
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: #5BF342;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-left-width: 1.6px;
+}
+
+.bigpic {
+    grid-area: bigpic;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    bottom: 160px;
+    left: 550px;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"writing writing writing"
+                        "architecture software_developer digital_game_designer";
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:50px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 550px;
+}
+
+#writing {
+    grid-area: writing;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+#architecture{
+    grid-area: architecture;
+    padding-left: 60px;
+}
+
+#software_developer{
+    grid-area: software_developer;
+}
+
+#digital_game_designer{
+    grid-area: digital_game_designer;
+    padding-right: 60px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #E5E1D7;
+    text-align: left;
+    height: 50px;  
+    padding-left: 60px;
+    padding-bottom: 10px;
+}

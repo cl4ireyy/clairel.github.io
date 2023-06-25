@@ -1,0 +1,390 @@
+#body {
+    background-color: #E5E1D7;
+    padding: 200px;
+    text-align: center;
+}  
+
+#wrapper{
+    display: grid;
+    grid-template-areas: "nav"
+                         "bigpic"
+                         "content"
+                         "content1"
+                         "footer";
+    background-color: #E5E1D7; 
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "logo menu";
+    background-color: #63D21F;
+    border-color: #63D21F;
+    height: 110px;
+    width: 1520px;
+}
+
+#logo {
+    grid-area: logo;
+    display: grid;
+    padding-left: 100px;
+    padding-top: 16px;
+    padding-right: 100px;
+}
+
+#menu{
+    grid-area: menu;
+    display: grid;
+    grid-template-areas: "home aboutme";
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 80px;
+    padding-top: 16px;
+}
+
+#home{
+    grid-area: home;
+    display: subgrid;
+    background-color: #20BA26;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-right-width: 1.6px;
+}
+
+#aboutme{
+    grid-area: aboutme;
+    background-color: #5BF342;
+    border-width:3px;
+    border-style:solid;
+    border-color:#09440B;
+    text-align: center;
+    border-left-width: 1.6px;
+}
+
+.bigpic {
+    grid-area: bigpic;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    bottom: 160px;
+    left: 530px;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr fr 1fr 1fr;
+    grid-template-areas:"flag flag writing writing"
+                        "chinesenewyear mid-autumnfestival dragonboat lanternfestival"
+                        "pekingduck dimsum lamien kebab"
+                        "greatwallofchina forbiddencity yellowmountains liriver"
+                        "papercutting lanterns chinesewriting embriodery";
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:50px;
+    margin-left: 60px;
+    height: 1280px;
+    width: 1390px;
+}
+
+#flag {
+    grid-area: flag;
+    padding-top: 60px;
+    padding-right: 50px;
+}
+
+#writing {
+    grid-area: writing;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.chinesenewyear {
+    grid-area: chinesenewyear;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 70px;
+    padding-right: 15px;
+}
+
+.chinesenewyear1 {
+    grid-area: chinesenewyear1;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+}
+
+.mid-autumnfestival {
+    grid-area: mid-autumnfestival;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+    
+}
+
+.mid-autumnfestival1 {
+    grid-area: mid-autumnfestival1;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.dragonboat {
+    grid-area: dragonboat;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.dragonboat1 {
+    grid-area: dragonboat1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.lanternfestival {
+    grid-area: lanternfestival;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 50px;
+}
+
+.lanternfestival1 {
+    grid-area: lanternfestival1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.pekingduck {
+    grid-area: pekingduck;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 70px;
+    padding-right: 15px;
+}
+
+.pekingduck1 {
+    grid-area: pekingduck1;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+}
+
+.dimsum {
+    grid-area: dimsum;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+}
+
+.dimsum1 {
+    grid-area: dimsum1;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.lamien {
+    grid-area: lamien;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.lamien1 {
+    grid-area: lamien1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.kebab {
+    grid-area: kebab;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 50px;
+}
+
+.kebab1 {
+    grid-area: kebab1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.greatwallofchina {
+    grid-area: greatwallofchina;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 70px;
+    padding-right: 15px;
+}
+
+.greatwallofchina1 {
+    grid-area: greatwallofchina1;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+}
+
+.forbiddencity {
+    grid-area: forbiddencity;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+}
+
+.forbiddencity1 {
+    grid-area: forbiddencity1;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.yellowmountains {
+    grid-area: yellowmountains;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.yellowmountains1 {
+    grid-area: yellowmountains1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.liriver {
+    grid-area: liriver;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 50px;
+}
+
+.liriver1 {
+    grid-area: liriver1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.papercutting {
+    grid-area: papercutting;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-left: 70px;
+    padding-right: 15px;
+}
+
+.papercutting1 {
+    grid-area: papercutting1;
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+}
+
+.lanterns {
+    grid-area: lanterns;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+}
+
+.lanterns1 {
+    grid-area: lanterns1;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.chinesewriting {
+    grid-area: chinesewriting;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.chinesewriting1 {
+    grid-area: chinesewriting1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.embriodery {
+    grid-area: embriodery;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-right: 50px;
+}
+
+.embriodery1 {
+    grid-area: embriodery1;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+#content1 {
+    grid-area: content1;
+    display: grid;
+    grid-template-columns: 1fr fr 1fr 1fr;
+    grid-template-areas:"writing1 writing1 writing1 writing1";
+    border: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: white;
+    margin-top:50px;
+    margin-left:60px;
+    margin-right:60px;
+    height: 400px;
+}
+
+#writing1 {
+    grid-area: writing1;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 350px;
+    width: 1250px;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #E5E1D7;
+    text-align: left;
+    height: 50px;  
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
